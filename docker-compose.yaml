@@ -1,0 +1,28 @@
+version: '3.9'  # optional since v1.27.0
+services:
+  mssql:
+    hostname: mssql
+    image: mcr.microsoft.com/mssql/server:latest
+    environment:
+      - ACCEPT_EULA="Y"
+      - SA_PASSWORD="M1st2rPassw0rd"
+    ports:
+    - '14333:1433'
+    networks: 
+      default: null
+
+  api:
+    hostname: api
+    image:  juanmunoz/webapi:latest
+    depends_on:
+      - mssql
+    ports:    
+    - '8080:80'
+    networks: 
+      default: null
+
+networks:
+  default:
+    external: true
+    name: ApiConsultas
+    
