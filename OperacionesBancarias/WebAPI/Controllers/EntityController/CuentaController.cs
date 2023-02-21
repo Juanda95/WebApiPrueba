@@ -1,9 +1,13 @@
 ﻿using Application.Feauties.Clientes.Commands.CreateClienteCommand;
 using Application.Feauties.Clientes.Commands.DeleteClienteCommand;
 using Application.Feauties.Clientes.Commands.UpdateClienteCommand;
+using Application.Feauties.Clientes.Queries.GetallClientes;
+using Application.Feauties.Clientes.Queries.GetClienteById;
 using Application.Feauties.Cuentas.Common.CreateCuentaCommand;
 using Application.Feauties.Cuentas.Common.DeleteCuentaCommand;
 using Application.Feauties.Cuentas.Common.UpdateCuentaCommand;
+using Application.Feauties.Cuentas.Queries.GetallCuentas;
+using Application.Feauties.Cuentas.Queries.GetClienteById;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
@@ -13,6 +17,21 @@ namespace WebAPI.Controllers.Entity_Controller
 {  
     public class CuentaController : BaseApiController
     {
+        // GET
+        [HttpGet]
+        [Authorize(Roles = "Basic")]
+        public async Task<IActionResult> GetAll()
+        {
+            return Ok(await Mediator.Send(new GetCuentasAllQuery()));
+        }
+
+        // GET
+        [HttpGet("{id}")]
+        [Authorize(Roles = "Basic")]
+        public async Task<IActionResult> Get(int id)
+        {
+            return Ok(await Mediator.Send(new GetCuentaByIdQuery { Id = id }));
+        }
         //POST 
         [HttpPost]
         [Authorize(Roles = "Basic")]

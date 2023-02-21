@@ -7517,9 +7517,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\juan.dmunoz\\Desktop\\Operacio_banco\\OperacionesBancarias\\WebApiTest\\WebApiTest.csproj",
-      "projectName": "WebApiTest",
-      "projectPath": "C:\\Users\\juan.dmunoz\\Desktop\\Operacio_banco\\OperacionesBancarias\\WebApiTest\\WebApiTest.csproj",
+      "projectUniqueName": "C:\\Users\\juan.dmunoz\\Desktop\\Operacio_banco\\OperacionesBancarias\\WebApiTest\\WebApiUnitTest.csproj",
+      "projectName": "WebApiUnitTest",
+      "projectPath": "C:\\Users\\juan.dmunoz\\Desktop\\Operacio_banco\\OperacionesBancarias\\WebApiTest\\WebApiUnitTest.csproj",
       "packagesPath": "C:\\Users\\juan.dmunoz\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\juan.dmunoz\\Desktop\\Operacio_banco\\OperacionesBancarias\\WebApiTest\\obj\\",
       "projectStyle": "PackageReference",

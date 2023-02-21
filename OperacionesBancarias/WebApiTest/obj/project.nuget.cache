@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QyAhHy7x1EzSyL5FtY7Cl2EMD6hCBIBumpfIln9n1MqqpCw27w1r7XPxrmHGmr21nDNRBw0ocxLL72iEDBJ9Fg==",
+  "dgSpecHash": "6wDPX75Fg2k3QmLS1C+sizBM0QzF0mLRVi+9myRWYT++CH2ZQE8BToUsCptOv/WrSxDkdJA6ua8ooJva9GOyAQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\juan.dmunoz\\Desktop\\Operacio_banco\\OperacionesBancarias\\WebApiTest\\WebApiTest.csproj",
+  "projectFilePath": "C:\\Users\\juan.dmunoz\\Desktop\\Operacio_banco\\OperacionesBancarias\\WebApiTest\\WebApiUnitTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\juan.dmunoz\\.nuget\\packages\\ardalis.specification\\6.1.0\\ardalis.specification.6.1.0.nupkg.sha512",
     "C:\\Users\\juan.dmunoz\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",

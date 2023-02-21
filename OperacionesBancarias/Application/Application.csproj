@@ -17,12 +17,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Feauties\Clientes\Queries\GetClienteByDocument\" />
-    <Folder Include="Feauties\Cuentas\Queries\" />
-    <Folder Include="Feauties\Movimientos\Queries\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\Domain\Domain.csproj" />
   </ItemGroup>
 

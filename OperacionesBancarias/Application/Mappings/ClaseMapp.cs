@@ -31,6 +31,8 @@ namespace Application.Mappings
             #endregion
             #region DTOs
             CreateMap<Cliente, ClienteDTO>();
+            CreateMap<Cuenta, CuentaDTO>();
+            CreateMap<Movimiento, MovimientoDTO>();
             #endregion
         }
     }
