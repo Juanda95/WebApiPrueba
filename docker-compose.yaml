@@ -3,20 +3,20 @@ services:
   mssql:
     hostname: mssql
     image: mcr.microsoft.com/mssql/server:latest
+    # user: '0:0'
+    container_name: sqlserver
     environment:
-      - ACCEPT_EULA="Y"
-      - SA_PASSWORD="M1st2rPassw0rd"
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=M1st2rPassw0rd
     ports:
-    - '14333:1433'
+      - '1433:1433'
 
   api:
     hostname: api
-    image:  juanmunoz/webapi:latest
+    build: 
+      context: ./OperacionesBancarias      
+      dockerfile: Dockerfile
     depends_on:
       - mssql
     ports:    
-    - '8080:80'
-
-
-
-    
+      - '80:80'
